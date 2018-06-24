@@ -1,0 +1,20 @@
+title: Feedback
+honeypot: antispam
+fields:
+  name:
+    display: Name
+    validate: required
+  email:
+    display: E-mail
+    validate: required
+  subject:
+    display: Subject
+    validate: required
+  message:
+    display: Message
+    validate: required
+columns:
+  - name
+  - email
+  - subject
+  - message

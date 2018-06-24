@@ -1,28 +1,29 @@
-title: Contact Me
+title: Kontakt os
+honeypot: antispam
 
 fields:
   name:
-    display: Name
+    display: Navn
     validate: required|min:2
   email:
-    display: Email Address
+    display: E-mailadresse
     validate: required|email
   number:
-    display: Favorite Number
+    display: Yndlingstal
     validate: integer
   comment:
-    display: Comment
+    display: Kommentar
 
 metrics:
   -
     type: total
-    label: Total Responses
+    label: Svar i alt
   -
     type: sum
     field: number
-    label: Sum of Favorite Number
+    label: Summen af yndlingstal
   -
     type: average
     field: number
-    label: Average Favorite Number
+    label: Gennemsnit af yndlingstal
     precision: 1
