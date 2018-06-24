@@ -1,0 +1,8 @@
+app_key: 2eZExJo1WXtZMKkloDKu7qakvNb9Fwzw
+yaml_parser: symfony
+locales:
+  da:
+    full: da_DK
+    name: Danish
+    url: 'http://localhost:8888/'
+timezone: Europe/Copenhagen
