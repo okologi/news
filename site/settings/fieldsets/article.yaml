@@ -1,0 +1,83 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        instructions: 'Article title.'
+        localizable: true
+        width: 50
+      frontpage_title:
+        type: text
+        instructions: 'Frontpage article title only shown if filled out.'
+        width: 50
+        display: 'Frontpage title'
+      lead:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        display: Lead
+        width: 50
+      frontpage_lead:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        width: 50
+        display: 'Frontpage lead'
+      hero_image:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        instructions: 'Main image (outside content area).'
+        display: 'Hero image'
+      story:
+        spellcheck: true
+        allow_source: true
+        autoLink: true
+        target_blank: false
+        link_validation: true
+        force_plain_text: true
+        clean_pasted_html: true
+        restrict_assets: false
+        type: bard
+        display: Story
+  sidebar:
+    display: Sidebar
+    fields:
+      slug:
+        display: Slug
+        type: text
+        instructions: 'Article URL'
+        width: 66
+      date:
+        display: 'Date published'
+        type: date
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2018'
+        instructions: 'Date when article will be visible.'
+        width: 33
+      tags:
+        type: tags
+        display: Tags
+        width: 66
+      writer:
+        mode: tags
+        type: users
+        display: Writer
+        width: 33
+  seo:
+    display: SEO
+    fields:
+      field_1:
+        type: text
+        display: 'Field 1'
+taxonomies: true
+title: Article
+create_title: 'New Article'
+hide: true

@@ -1,0 +1,31 @@
+<section class="section">
+    <div class="container">
+        <h1 class="title">{{ title }}</h1>
+        <h2 class="">{{ theme_name }}</h2>
+        <!--
+        <p class="subtitle">
+            <i class="fas fa-camera-retro"></i> This is <strong>Bulma Kit</strong>!
+        </p>
+        -->
+        {{ content }}
+
+        <h1>{{ title }}</h1>
+        <h2>{{ lead }}</h2>
+        <p>{{ date }}, skrevet af {{ user_name }}</p>
+        {{ hero_image }}
+        {{ story }}
+
+        <a class="button is-primary is-small">Test</a>
+
+        <footer class="footer">
+          <div class="columns">
+            <div class="column">
+              <p class="copyright">&copy; {{ now format="Y" }} {{ author_name }}</p>
+            </div>
+            <div class="column">
+              <p class="tribute">Built with Statamic</p>
+            </div>
+          </div>
+        </footer>
+    </div>
+</section>

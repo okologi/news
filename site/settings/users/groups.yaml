@@ -1,0 +1,35 @@
+fb7eaf63-feb2-4126-a46d-dea02aed5c34:
+  title: Members
+  slug: members
+  roles:
+    - bbbfadc8-ef48-4f8b-bdda-6ec3e3e93f6e
+    - bbe69d43-67b7-4fe9-aa11-9f0c28273fb7
+    - 79e517ec-4c35-4922-b14c-99c201112285
+    - d32e14fb-08c9-44c2-aaf8-21200852bafd
+  users: {  }
+6fc5a15a-ac9f-448e-8a73-849dee525f5b:
+  title: Editorial
+  slug: editorial
+  roles:
+    - d32e14fb-08c9-44c2-aaf8-21200852bafd
+    - 79e517ec-4c35-4922-b14c-99c201112285
+    - bbe69d43-67b7-4fe9-aa11-9f0c28273fb7
+  users: {  }
+62364ea5-dbaf-4af3-a6d5-d94707cc92e4:
+  title: Editors
+  slug: editors
+  roles:
+    - 79e517ec-4c35-4922-b14c-99c201112285
+  users: {  }
+a0c06403-b0ae-4bd4-a49f-4d04445bc2b5:
+  title: Writers
+  slug: writers
+  roles:
+    - bbe69d43-67b7-4fe9-aa11-9f0c28273fb7
+  users: {  }
+74ab18ac-4cbb-47b6-b3e2-76e99da36875:
+  title: Admins
+  slug: admins
+  roles:
+    - d32e14fb-08c9-44c2-aaf8-21200852bafd
+  users: {  }

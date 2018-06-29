@@ -1,8 +1,45 @@
-app_key: 2eZExJo1WXtZMKkloDKu7qakvNb9Fwzw
-yaml_parser: symfony
+license_key: b6781b78-149f-47a0-9dfe-a9137ee31556
 locales:
   da:
     full: da_DK
     name: Danish
     url: 'http://localhost:8888/'
 timezone: Europe/Copenhagen
+date_format: 'j. F Y'
+default_extension: md
+filesystems:
+  content:
+    driver: local
+    root: site/content
+  storage:
+    driver: local
+    root: site/storage
+  users:
+    driver: local
+    root: site/users
+  themes:
+    driver: local
+    root: site/themes
+    url: /site/themes
+app_key: 2eZExJo1WXtZMKkloDKu7qakvNb9Fwzw
+redactor:
+  -
+    name: Standard
+    settings:
+      buttons:
+        - formatting
+        - bold
+        - italic
+        - link
+        - unorderedlist
+        - orderedlist
+        - html
+  -
+    name: Basic
+    settings:
+      buttons:
+        - bold
+        - italic
+yaml_parser: symfony
+send_powered_by_header: true
+ensure_unique_ids: true
