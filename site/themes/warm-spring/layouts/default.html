@@ -12,15 +12,26 @@
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+        <a class="navbar-item" href="/">
+          ØKOLOGISK
+          <!--
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          -->
         </a>
+
         <a class="navbar-item" href="/">
           Forside
         </a>
-        <a class="navbar-item" href="kontakt">
-          Kontakt
-        </a>
+
+         {{ nav from="/{segment_1}" max_depth="1" }}
+               <a href="{{ url }}" class="navbar-item">{{ title }}</a>
+               {{ if is_current || is_parent }}
+                  {{ if children }}
+                     <ul>{{ *recursive children* }}</ul>
+                  {{ /if }}
+               {{ /if }}
+         {{ /nav }}
+
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>

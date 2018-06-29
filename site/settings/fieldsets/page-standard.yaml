@@ -1,0 +1,47 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        width: 50
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+        width: 50
+      writer:
+        max_items: 1
+        type: users
+        width: 33
+        display: Writer
+      page_template:
+        type: template
+        display: 'Page Template'
+        width: 33
+      date:
+        display: Date
+        type: date
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2018'
+        width: 33
+      page_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: true
+        target_blank: false
+        link_validation: true
+        force_plain_text: true
+        clean_pasted_html: true
+        restrict_assets: false
+        type: bard
+        display: 'Page content'
+  seo:
+    display: SEO
+    fields: {  }
+taxonomies: true
+title: 'Page standard'
+create_title: 'New Page (Standard)'

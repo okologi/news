@@ -3,3 +3,7 @@ auto_index: true
 default_index: default
 searchable:
   - title
+  - story
+  - tags
+  - writer
+  - lead

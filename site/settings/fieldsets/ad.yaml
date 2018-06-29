@@ -1,0 +1,33 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        width: 33
+        localizable: true
+      date:
+        display: Date
+        type: date
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 1900'
+        width: 33
+      collections:
+        type: collections
+        width: 33
+        display: Collections
+      image:
+        container: main
+        folder: ads
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        display: Image
+taxonomies: true
+title: Ad
+create_title: 'New Ad'
+hide: true
